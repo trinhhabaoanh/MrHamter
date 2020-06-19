@@ -1,0 +1,49 @@
+﻿@model KTGKNgMay.Models.TblProduct
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TblProduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(mode => mode.ProductCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(mode => mode.ProductName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(mode => mode.ProductShortName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductShortName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(mode => mode.ProductNote)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductNote)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(mode => mode.CategoryID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CategoryID)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
